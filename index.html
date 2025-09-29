@@ -1,27 +1,131 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tak</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Antoni</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .contact a:hover {
+      background: #2980b9;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Antoni [Twoje Nazwisko]</h1>
+    <p>Uczeń 4 klasy technikum informatycznego | Technik informatyk (INF.02, INF.03)</p>
+  </header>
 
-    <h1>Tak</h1>
+  <section>
+    <h2>O mnie</h2>
+    <p>
+      Nazywam się Antoni [Twoje Nazwisko] i jestem uczniem technikum informatycznego na profilu rozszerzonym z matematyką i fizyką. 
+      Interesuję się programowaniem, nauczaniem oraz analizą problemów informatycznych. 
+      Przygotowuję się do egzaminu zawodowego INF.03, mając już zdany INF.02.
+    </p>
+  </section>
 
+  <section>
+    <h2>Umiejętności</h2>
+    <div class="skills">
+      <div class="card">HTML, CSS, JavaScript</div>
+      <div class="card">Python, Lua (skrypty do FiveM)</div>
+      <div class="card">Java, C# (podstawy)</div>
+      <div class="card">SQL, bazy danych</div>
+      <div class="card">Linux, Windows Server</div>
+      <div class="card">Konfiguracja sieci, Apache, SSH</div>
+    </div>
+  </section>
 
+  <section>
+    <h2>Projekty</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>System logowania w PHP + MySQL</h3>
+        <p>Projekt szkolny prezentujący autoryzację użytkowników z wykorzystaniem baz danych.</p>
+        <p><b>Technologie:</b> PHP, MySQL, HTML, CSS</p>
+        <a href="#">🔗 Kod na GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Skrypty do FiveM</h3>
+        <p>Skrypty w Lua rozwijające rozgrywkę w GTA V RP.</p>
+        <p><b>Technologie:</b> Lua, FiveM API</p>
+        <a href="#">🔗 Kod na GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Baza danych sklepu</h3>
+        <p>Projekt modelu bazy danych z zapytaniami SQL i ERD.</p>
+        <p><b>Technologie:</b> SQL</p>
+        <a href="#">🔗 Dokumentacja</a>
+      </div>
+    </div>
+  </section>
 
-
-
-
-
-
-
-
-
-
-
-
+  <section class="contact">
+    <h2>Kontakt</h2>
+    <p>Jeśli chcesz się ze mną skontaktować:</p>
+    <a href="mailto:twojemail@example.com">📧 Email</a>
+    <a href="https://github.com/twojgithub" target="_blank">💻 GitHub</a>
+    <a href="https://linkedin.com/in/twojlinkedin" target="_blank">🔗 LinkedIn</a>
+  </section>
 </body>
-
 </html>
